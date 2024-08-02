@@ -28,5 +28,5 @@ int main(){
        = k1 + k2n + k3n  --- "k" denotes time, "n" denotes number of temes.
        = k2n + k3n --- "k1" has been removed because it is constant, in simple terms it will take same time to  assign variables, whereas "k2n" and "k3n" can take more or less time because the size of array and no. of counts can be changed.
        => (k2 + k3)n
-       = k4n -> O(n) -> O(count)
+       = k5n -> O(n) -> O(count)
 */
