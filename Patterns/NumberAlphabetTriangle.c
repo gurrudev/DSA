@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-void NumberAlphabetTriangle(int num){
+void numberAlphabetTriangle(int num){
     for (int i = 1; i <= num; i++){
         if (i % 2 == 0){
             int a = 1;
@@ -29,6 +29,6 @@ void NumberAlphabetTriangle(int num){
 
 int main() {
     int num = 5;
-    NumberAlphabetTriangle(num);
+    numberAlphabetTriangle(num);
     return 0;
 }
