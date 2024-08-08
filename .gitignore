@@ -1,6 +1,7 @@
 # VS Code
 .vscode
 tempCodeRunnerFile.c
+test.c
 
 # Prerequisites
 *.d
