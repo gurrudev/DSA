@@ -8,29 +8,29 @@ void displayArr(int arr[], int size){
     printf("\n");
 }
 
-int insertionToIndex(int arr[], int size, int element, int capacity, int index){
-    if(size >= capacity){
-        printf("Array is full, can't perform insertion.\n");
+int insert(int arr[], int size, int index, int element, int capacityOfArray){
+    if(size >= capacityOfArray){
+        printf("Capacity of array exceeded!");
     }
 
     for(int i = size-1; i >= index; i--){
         arr[i+1] = arr[i];
     }
+
     arr[index] = element;
 
     return 0;
 }
 
-
 int main(){
-    int arr[100] = {7, 8, 12, 27, 88};
-    int size = 5, element = 45, index = 3;
-    printf("------------ Array Before Insertion -------------\n");
-    displayArr(arr, size);
-    printf("------------ Array After Insertion --------------\n");
-    insertionToIndex(arr, size, element, 100, index);
-    size += 1;
+    int arr[10] = {1, 2, 3, 4};
+    int size = 4, element = 5, index = 1;
+
     displayArr(arr, size);
 
+    insert(arr, size, index, element, 10);
+    size++;
+
+    displayArr(arr, size);
     return 0;
 }
