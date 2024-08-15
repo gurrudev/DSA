@@ -10,7 +10,7 @@ int binarySearch(int arr[], int size, int element){
 
         if(arr[mid] == element){
             return mid;
-        } else if (arr[mid] < element){
+        } else if (arr[mid] > element){
             left = mid + 1;
         } else {
             right = mid - 1;
@@ -21,9 +21,9 @@ int binarySearch(int arr[], int size, int element){
 }
 
 int main(){
-    int arr[] = {2, 4, 5, 6, 8, 9, 12, 14, 17, 20};      // Ascending 
-    // int arr[] = {20, 17, 14, 12, 9, 8, 6, 5, 4, 2};      // Descending
-    int size = 10, element = 14;
+    // int arr[] = {2, 4, 5, 6, 8, 9, 12, 14, 17, 20};      // Ascending  (arr[mid] < element)
+    int arr[] = {20, 17, 14, 12, 9, 8, 6, 5, 4, 2};      // Descending  (arr[mid] > element)
+    int size = 10, element = 21;
 
     int result = binarySearch(arr, size, element);
     printf("%d", result);
